@@ -6,5 +6,5 @@ for file in filenames:
     with Image.open(file) as img:
         img.load()
         new_img = img.filter(ImageFilter.FIND_EDGES)
-        # new_img.show()
+        new_img.show()
         new_img.save("new_" + file)
